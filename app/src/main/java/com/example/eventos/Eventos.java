@@ -45,11 +45,16 @@ public class Eventos extends AppCompatActivity {
         artistas_data.add(new Item_eventos("2","","Cumpleaños"));
         artistas_data.add(new Item_eventos("3", "", "Dspedida Solteros"));
         artistas_data.add(new Item_eventos("4", "", "Baby Shower"));
-
+favoritos.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        
+    }
+});
         search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                Log.e("SearchO", query);
+
                 return false;
             }
 
